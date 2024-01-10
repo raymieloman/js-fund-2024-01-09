@@ -30,3 +30,12 @@ console.log(myStoel.mileage);
 myStoel.walk();
 console.log(myStoel.mileage);
 console.log(myStoel.b);
+
+let myStoelError;
+// console.log(myStoelError.gewicht); // vout
+
+console.log(myStoelError?.gewicht);
+// myStoelError = new Stoel(3, 37, "Bruin");
+
+myStoelError ??= new Stoel(5, 18, "Zwart");
+console.log(myStoelError?.gewicht);
