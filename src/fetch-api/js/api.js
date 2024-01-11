@@ -17,8 +17,6 @@ async function postData(url = "", data = {}) {
     return response.json(); // parses JSON response into native JavaScript objects
 }
 
-
-
 function performGet() {
     fetch('http://localhost:3000/employees').then(response => response.text()).then(text => {
         console.log("The home page is " + text.length + " characters long.");
@@ -31,7 +29,7 @@ function performGet() {
 }
 
 function createEmployee() {
-    postData("http://localhost:3000/employees", { firstName: "Francien" }).then((data) => {
+    postData("http://localhost:3000/employees", { firstName: "Paulus" }).then((data) => {
         console.log(data); // JSON data parsed by `data.json()` call
     });
 
